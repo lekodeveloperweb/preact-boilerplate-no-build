@@ -1,0 +1,24 @@
+{
+  "name": "preact-boilerplate-no-build",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "",
+  "scripts": {
+    "start": "concurrently -c \"green,blue\" -n server,tailwind \"node index.js\" \"npm run tailwind:start\"",
+    "tailwind:build": "tailwindcss -i tailwind.css -o css/styles.css",
+    "tailwind:start": "npm run tailwind:build -- --minify --watch"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Alex Leko",
+    "email": "contatos@ldw.solutions",
+    "url": "https://github.com/lekodeveloperweb/preact-boilerplate-no-build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "live-server": "^1.1.0",
+    "tailwindcss": "^3.3.2"
+  }
+}
