@@ -7,7 +7,7 @@ export class About extends Component {
     return html`
       <div class="flex flex-col w-full h-full justify-center items-center p-4">
         <h1 class="text-2xl">About class component (Lazy loading example)</h1>
-        <a class="underline" href="/">Go home</a>
+        <a class="underline" href="/app">Go home</a>
       </div>
     `
   }

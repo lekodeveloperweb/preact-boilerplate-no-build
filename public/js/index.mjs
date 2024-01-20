@@ -17,10 +17,10 @@ const About = () =>
 /** Stateless app */
 const App = () =>
   html`<${Router}>
-      <${Home} path="/" />
-      <${AsyncRoute} path="/about" getComponent=${About}
+      <${Home} path="/app" />
+      <${AsyncRoute} path="/app/about" getComponent=${About}
     loading=${() => html`<${LoadingComponent} />`} />
-      <${Error} type="404" default />
+      <${Error} type="/app/404" default />
     </${Router}>`
 
 /** our index route */
@@ -38,8 +38,8 @@ class Home extends Component {
       />
       <div>In caps: ${text.toUpperCase()}</div>
       <br />
-      <a class="underline" href="/asdf">Error router</a>
-      <a class="underline" href="/about">About page</a>
+      <a class="underline" href="/app/asdf">Error router</a>
+      <a class="underline" href="/app/about">About page</a>
       <button
         class="dark:bg-white text-slate-700 bg-green-300 px-2 py-1 rounded-md"
         onclick=${() => {

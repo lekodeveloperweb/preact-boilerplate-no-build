@@ -26,6 +26,6 @@ export const Error = ({ type, url }) => {
         increase
       </button>
     </p>
-    <a class="underline" href="/">Go home</a>
+    <a class="underline" href="/app">Go home</a>
   </section>`
 }
