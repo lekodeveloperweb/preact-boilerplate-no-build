@@ -54,4 +54,4 @@ class Home extends Component {
   }
 }
 
-render(html`<${App} />`, document.body)
+render(html`<${App} />`, document.getElementById("app-root"))
